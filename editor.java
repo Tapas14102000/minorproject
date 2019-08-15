@@ -84,7 +84,7 @@ public class editor extends JFrame implements ActionListener
 		} 
 		else if (s.equals("close"))
 		{ 
-			 f.setVisible(false);
+			 Runtime.getRuntime().exit(EXIT_ON_CLOSE);
 		} 
 } 
 public static void main(String[] args) 
