@@ -6,12 +6,14 @@ Basic Java (Swing operations)
   - This is a simple notepad designed with the help of Swing concept of Java. 
   - Operations:
       - FILE
-        - NEW         //create a new file
-        - SAVE        //save the opened file
+        - NEW           //create a new file
+        - SAVE         //save the opened file
+        - OPEN        //Open a file
+        - PRINT      //print the opened file
       - EDIT
-        - CUT         //cut a particular selected lines
+        - CUT          //cut a particular selected lines
         - COPY        //copy a particular selected lines
-        - paste       //paste the copied/cut lines
+        - PASTE      //paste the copied/cut lines
       - EXIT
         - CLOSE       //terminate the notepad
 # SCREENSHOTS
