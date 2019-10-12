@@ -7,11 +7,10 @@ public class editor extends JFrame implements ActionListener
 {
 	JTextArea t; 
 	JFrame f;
-	public void scrollbar()
+	public void scrollbar(JTextArea t)
 	{
 		f.getContentPane().setLayout(new FlowLayout());
-		JTextArea textarea = new JTextArea(47,150);
-		JScrollPane scrollableTextArea=new JScrollPane(textarea);
+		JScrollPane scrollableTextArea=new JScrollPane(t);
 		scrollableTextArea.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
 		scrollableTextArea.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
 		f.getContentPane().add(scrollableTextArea);
@@ -19,8 +18,7 @@ public class editor extends JFrame implements ActionListener
 	editor() 
 	{
 		f = new JFrame("editor"); 
-		t = new JTextArea();  
-		scrollbar();
+		t = new JTextArea(47,150);  
 		JMenuBar mb = new JMenuBar(); 
 		JMenu m1 = new JMenu("File"); 
 		JMenuItem mi1 = new JMenuItem("New"); 
@@ -52,6 +50,7 @@ public class editor extends JFrame implements ActionListener
 		mb.add(mc); 
 		f.setJMenuBar(mb); 
 		f.add(t); 
+		scrollbar(t);
 		f.setSize(500, 500); 
 		f.setVisible(true); 
 	} 
